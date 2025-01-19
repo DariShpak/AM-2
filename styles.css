@@ -176,61 +176,21 @@ img {
 
 /* services */
 .services-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .services-list {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 20px;
-  padding: 20px;
-  list-style: none;
-  margin: 0;
+  flex-direction: column;
+  gap: 96px;
 }
 
 .services-item {
-  flex: 0 0 80%;
-  scroll-snap-align: start;
-  background-color: #f8f8f8;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.services-item img {
-  border-radius: 10px 10px 0 0;
-  width: 100%;
-}
-
-.scroll-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  z-index: 10;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  opacity: 0.7;
-}
-
-.scroll-button:hover {
-  opacity: 1;
-}
-
-.scroll-button.left {
-  left: 10px;
-}
-
-.scroll-button.right {
-  right: 10px;
-}
-
-.services-list {
-  scroll-behavior: smooth;
+  display: flex;
+  gap: 96px;
+  text-align: justify;
 }
 
 /* footer */
