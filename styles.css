@@ -51,8 +51,8 @@ img {
 }
 
 .container {
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-left: 120px;
+  padding-right: 120px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -129,6 +129,8 @@ img {
 /* ------------- hero section ------------ */
 
 .hero-container {
+  padding-left: 120px;
+  padding-right: 120px;
   display: flex;
   gap: 62px;
   align-items: center;
@@ -143,7 +145,7 @@ img {
 .hero-text-content {
   display: flex;
   flex-direction: column;
-  max-width: 352px;
+  max-width: 525px;
 }
 
 .hero-title {
@@ -170,8 +172,19 @@ img {
 /* -------------- ABOUT SECTION ----------------- */
 .about-container {
   display: flex;
+  flex-direction: column;
   gap: 48px;
   text-align: justify;
+}
+
+.accent-words {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-section .section-title{
+ margin-left: auto;
+ margin-right: auto;
 }
 
 /* services */
