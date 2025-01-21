@@ -11,14 +11,14 @@ body {
   color: var(--dark-color);
 }
 
-a,
+
 .link {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--dark-color);
 }
-a,
+
 .link:visited {
-  color: var(--text-color);
+  color: var(--dark-color);
 }
 
 button {
@@ -182,28 +182,51 @@ img {
   justify-content: space-between;
 }
 
-.about-section .section-title{
- margin-left: auto;
- margin-right: auto;
+.about-section .section-title {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* services */
+
+.services-section {
+  /* position: relative; */
+  /* overflow: hidden; */
+  background-color: #f9f9f9;
+}
+
 .services-container {
   display: flex;
-  flex-direction: column;
-  gap: 48px;
+  gap: 32px; /* Відстань між елементами */
+
 }
+
+/* .services-wrapper {
+  display: flex;
+} */
 
 .services-list {
   display: flex;
-  flex-direction: column;
-  gap: 96px;
+  gap: 32px;
+  /* padding: 0;
+  margin: 0; */
+
 }
 
 .services-item {
+  width: 800px;
+  /* flex: 0 0 100%; */
+  /* scroll-snap-align: center;  */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
   display: flex;
-  gap: 96px;
-  text-align: justify;
+  gap: 24px;
+}
+.services-item:hover {
+  transform: scale(1.05); /* Ефект збільшення при наведенні */
 }
 
 /* footer */
