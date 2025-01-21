@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --bg-color: #fff;
   --dark-color: #1a403f;
@@ -200,6 +204,7 @@ img {
   display: flex;
   /* flex-wrap: nowrap; */
   gap: 32px;
+  padding-right: 32px;
 }
 
 .services-container {
@@ -208,7 +213,7 @@ img {
   position: relative;
   height: auto; /* Робимо секцію на весь екран */
   /* padding-right: 100px; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .services-container.container {
@@ -227,15 +232,14 @@ img {
 }
 
 .services-item {
- min-width: 900px;
+  min-width: 900px;
   height: 600px;
   background-color: white;
   border: 1px solid black;
-
+  scroll-snap-align: center;
   display: flex;
   justify-content: space-between;
   gap: 48px;
-
 }
 
 .services-section .section-text-content {
