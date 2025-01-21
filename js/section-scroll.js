@@ -2,28 +2,16 @@ gsap.registerPlugin(ScrollTrigger)
 
 const wrapper = document.querySelector(".services-wrapper")
 
-// gsap.to(wrapper, {
-//   x: () => -(wrapper.scrollWidth - window.innerWidth), // Рухаємо весь контейнер вліво
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: ".services-section", // Секція, де почнеться скрол
-//     start: "top top", // Початок анімації
-//     end: () => `+=${wrapper.scrollWidth}`, // Кінець анімації (ширина всього контейнера)
-//     scrub: true, // Плавність скролу
-//     pin: true, // Фіксуємо секцію під час горизонтального скролу
-//     anticipatePin: 1
-//   }
-// })
-
 gsap.to(wrapper, {
-  x: () => -(wrapper.scrollWidth - window.innerWidth),
+  x: () => -(wrapper.scrollWidth - window.innerWidth + 50), // Додаємо запас
   ease: "none",
   scrollTrigger: {
     trigger: ".services-section",
     start: "top top",
-    end: () => `+=${wrapper.scrollWidth - window.innerWidth}`,
+    end: () => `+=${wrapper.scrollWidth - window.innerWidth + 50}`,
     scrub: true,
     pin: true,
     anticipatePin: 1,
+    invalidateOnRefresh: true // Оновлює розрахунки при зміні розміру
   }
 })
